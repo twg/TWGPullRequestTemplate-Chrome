@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "TWG Pull Request Template",
+  "description": "This extension will automatically populate Github PRs with a template. You can find the template here: https://gist.github.com/bgilham/906ba54fedddd81a009b. If you have suggestions/changes, ping @bgilham.",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+   "content_scripts": [
+      {
+        "matches": [ "*://github.com/twg/*" ],
+        "js": ["jquery.min.js", "extension.js"]
+      }
+  ],
+  "icons": {
+    "48":"icon.png"
+  }
+}
